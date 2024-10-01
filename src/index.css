@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.playball {
+  font-family: "Playball", cursive;
+}
+.poppins{
+     font-family: 'Poppins';
+}
+
+.dropdownmenu ul, .dropdownmenu li{
+    margin: 0;
+    padding: 0;
+}
+.dropdownmenu ul {
+    /* background: gray; */
+    list-style: none;
+    width: 100%;
+}
+.dropdownmenu li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+.dropdownmenu a{
+    /* background: #30a6e6; */
+    color: black;
+    display: block;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+/* Submenu is hidden initially */
+#submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    padding: 8px;
+    top: 25px;
+    visibility: hidden;
+    z-index: 1;
+    width: 160px;
+    border-radius: 5px;
+    border: solid black 1px;
+    max-height: 0; /* Collapsed initially */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, top 0.3s ease-out;
+}
+
+/* When the parent list item is hovered */
+li:hover div#submenu {
+    opacity: 1;
+    top: 35px;
+    visibility: visible;
+    max-height: 200px; /* Expand to accommodate content */
+}
+
+/* Submenu list item styling */
+#submenu li {
+    float: none;
+    width: 100%;
+}
+
+
+/* Define keyframes for a smoother zoomIn animation */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.7);  /* Start slightly zoomed out (70%) */
+    opacity: 0;             /* Start invisible */
+  }
+  40% {
+    transform: scale(1.05); /* Slightly overshoot (105% scale) */
+    opacity: 1;             /* Fully visible early on */
+  }
+  100% {
+    transform: scale(1);    /* Settle back to normal size (100%) */
+    opacity: 1;             /* Remain fully visible */
+  }
+}
+
+/* Apply the animation to the element */
+.animate-zoomIn {
+  animation: zoomIn 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; 
+  /* Use a custom cubic-bezier for a smoother ease-in-out feel */
+}
