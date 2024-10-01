@@ -15,14 +15,16 @@ const Customlink = ({ name, href, className }: Customlink) => {
   return (
     <Link
       to={href}
-      className={`${className} poppins text-[16px] leading-[24px] ${path === href ? "font-semibold" : ""}`}
+      className={`${className} poppins text-[16px] leading-[24px] ${
+        path === href ? "font-semibold text-[#d4a762]" : ""
+      }`}
     >
       {name}
     </Link>
   );
 };
   return (
-    <div className="bg-white shadow">
+    <div className="bg-gray-100 shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between py-4">
           <a href="/" className="text-3xl font-bold">
@@ -45,28 +47,40 @@ const Customlink = ({ name, href, className }: Customlink) => {
                     <FaCaretDown />
                   </div>
                   <div id="submenu" className="submenu">
-                    <li>
+                    <li className="hover:bg-[#d4a762] ">
                       <Customlink
                         name="Bonkagoj"
                         href="bonkagoj"
-                        className=""
+                        className="hover:text-white duration-0"
                       />
                     </li>
-                    <li>
-                      <Customlink name="Polka" href="polka" className="" />
+                    <li className="hover:bg-[#d4a762] ">
+                      <Customlink
+                        name="Polka"
+                        href="polka"
+                        className="hover:text-white"
+                      />
                     </li>
-                    <li>
-                      <Customlink name="Ecopac" href="ecopac" className="" />
+                    <li className="hover:bg-[#d4a762] ">
+                      <Customlink
+                        name="Ecopac"
+                        href="ecopac"
+                        className="hover:text-white"
+                      />
                     </li>
-                    <li>
+                    <li className="hover:bg-[#d4a762] ">
                       <Customlink
                         name="Alo Project"
                         href="alo-project"
-                        className=""
+                        className="hover:text-white"
                       />
                     </li>
-                    <li>
-                      <Customlink name="Bambuk" href="bambuk" className="" />
+                    <li className="hover:bg-[#d4a762] ">
+                      <Customlink
+                        name="Bambuk"
+                        href="bambuk"
+                        className="hover:text-white"
+                      />
                     </li>
                   </div>
                 </li>
@@ -84,7 +98,7 @@ const Customlink = ({ name, href, className }: Customlink) => {
             </button>
             <a
               href="#"
-              className="bg-[#d4a762] text-white py-2 px-6 rounded-full hover:bg-[#d4a762] transition-all duration-300"
+              className="bg-[#d4a762] text-white py-2 px-6 rounded-full hover:bg-[#d4a762] transition-all duration-300 font-[500]"
             >
               Let's Start
             </a>
