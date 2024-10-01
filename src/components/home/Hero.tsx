@@ -4,7 +4,7 @@ import header from "./../../assets/windsolar.png";
 const Hero: React.FC = () => {
   return (
     <div>
-      <div className="bg-gray-100 py-6 my-6 mt-0">
+      <div className="bg-[#FFFCF8] py-6 my-6 mt-0">
         <div className="max-w-[1240px] mx-auto   ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-4">
             <div className="lg:w-[736px] lg:h-[600px] space-y-6 flex justify-center  flex-col">

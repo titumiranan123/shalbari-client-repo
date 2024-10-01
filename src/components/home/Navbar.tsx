@@ -15,7 +15,7 @@ const Customlink = ({ name, href, className }: Customlink) => {
   return (
     <Link
       to={href}
-      className={`${className} poppins text-[16px] leading-[24px] ${
+      className={`${className} opensans text-[16px] leading-[24px] ${
         path === href ? "font-semibold text-[#d4a762]" : ""
       }`}
     >
@@ -24,7 +24,7 @@ const Customlink = ({ name, href, className }: Customlink) => {
   );
 };
   return (
-    <div className="bg-gray-100 shadow">
+    <div className="bg-[#FFFCF8] shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between py-4">
           <a href="/" className="text-3xl font-bold">
