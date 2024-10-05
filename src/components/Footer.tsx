@@ -13,7 +13,7 @@ const Footer:React.FC = () => {
         <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-4">
           <div>
             <a href="/" className="text-3xl font-bold">
-              <h1 className="playball text-[40px] leading-[48px]">
+              <h1 className="playball -mt-[12px] text-[40px] leading-[48px]">
                 <span className="text-[#d4a762]">Shal</span>
                 <span className="text-gray-900">brikkho</span>
               </h1>

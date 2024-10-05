@@ -6,6 +6,7 @@ import Blog from '../../components/home/Blog';
 import Achievment from '../../components/home/Achievment';
 import TestimonialSection from '../../components/home/Testimonial';
 import Team from '../../components/home/Team';
+import Productandservice from '../../components/home/Productandservice';
 
 const Home:React.FC = () => {
     return (
@@ -13,6 +14,7 @@ const Home:React.FC = () => {
             <Hero />
             <About />
             <State />
+            <Productandservice />
             <Team />
             <TestimonialSection />
             <Achievment />
