@@ -206,3 +206,29 @@ li:hover div#submenu {
   animation-duration: 1.5s;
   animation-fill-mode: forwards; /* Ensures element stays visible */
 }
+
+
+
+/* Add this to your global CSS or component styles */
+.loc-filter-search {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.loc-filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.loc-filter li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.loc-filter li:hover {
+  background-color: #f3f4f6;
+}
